@@ -5,8 +5,9 @@
       <router-view />
       <h2>Drinks Maior Idade</h2>
       <ul>
-        <li v-for="item of listaMaiores" :key="item.idDrink">
-          <v-img :src="item.strDrinkThumb">{{ item.strDrink }}</v-img>
+        <li v-for="item of listaMaiores" :key="item.name">
+          <v-img :src="item.imageURL"></v-img>
+          <span>{{item.name}}</span>
         </li>
       </ul>
     </v-main>
@@ -27,7 +28,7 @@ export default {
     };
   },
   created() {
-    fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s")
+    fetch("https://raw.githubusercontent.com/raywenderlich/recipes/master/Recipes.json")
       .then((resposta) => resposta.json())
       .then((json) => {
         this.listaMaiores = json;
