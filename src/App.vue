@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <AppTopBar/>
       <v-main>
         <router-view/>
       </v-main>
@@ -8,12 +7,10 @@
 </template>
 
 <script>
-import AppTopBar from './components/shared/AppTopBar.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    AppTopBar,
-  },
+
 };
 </script>
