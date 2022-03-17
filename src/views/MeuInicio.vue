@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <v-row justify="center">
     <v-dialog
       v-model="dialog"
@@ -40,6 +41,14 @@
       </v-card>
     </v-dialog>
   </v-row>
+=======
+    <v-container>
+        <h1>Início</h1>
+        <v-img class="inicio-imagem mb-4" src="https://images.pexels.com/photos/605408/pexels-photo-605408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        </v-img>
+        <p>Aplicativo voltado para a venda de bebidas alcoólicas a maiores de 18 anos com uma ampla variedades de drinks e bebidas não acoólicas a todos.</p>
+    </v-container>
+>>>>>>> d4d31cd32bf8b1fa93a0b5d18795fe9ba6d0f7e9
 </template>
 
 
@@ -55,5 +64,10 @@ export default {
 </script>
 
 <style scoped>
-
+    .inicio-imagem {
+        border-radius: 5px;
+    }
+    h1 {
+        text-align: center;
+    }
 </style>

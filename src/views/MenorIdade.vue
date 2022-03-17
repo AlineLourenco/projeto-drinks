@@ -1,13 +1,21 @@
 <template>
-    <v-container>
-        <h1>Sentimos muito!</h1>
-    </v-container>
+  <v-app>
+    <AppTopBarMenorIdade/>
+      <v-main>
+        <router-view/>
+      </v-main>
+  </v-app>
 </template>
 
 <script>
+import AppTopBarMenorIdade from '../components/shared/AppTopBarMenorIdade.vue'
+
 export default {
-    name: 'MenorIdade',
-}
+  name: 'AppMenorIdade',
+  components: {
+    AppTopBarMenorIdade,
+  },
+};
 </script>
 
 <style scoped>
