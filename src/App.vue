@@ -1,21 +1,28 @@
 <template>
   <v-app>
-    <AppTopBar />
+    <container v-if="maior">
+      <AppTopBarMaior />
+    </container>
+    <container v-else>
+      <AppTopBarMenor />
+    </container>
     <v-main>
-      <IdadeDialog />
+      <DialogMaior />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import AppTopBar from "./components/shared/AppTopBar.vue";
-import IdadeDialog from './components/IdadeDialog.vue'
+import AppTopBarMaior from "./components/shared/AppTopBarMaior.vue";
+import AppTopBarMenor from "./components/shared/AppTopBarMenor.vue";
+import DialogMaior from "./components/DialogMaior.vue";
 
 export default {
   name: "App",
   components: {
-    AppTopBar,
-    IdadeDialog,
+    AppTopBarMaior,
+    AppTopBarMenor,
+    DialogMaior,
   },
 };
 </script>

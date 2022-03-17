@@ -1,8 +1,8 @@
 <template>
-  <div class="app-top-bar-menor-idade">
-    <v-app-bar app color="light-blue accent-3" dark>
+  <div class="app-top-bar-maior-idade">
+    <v-app-bar>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title>Lista de Drinks Para menores de idade🍸</v-toolbar-title>
+      <v-toolbar-title>Lista de Drinks para maiores de idade🍸</v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
@@ -20,13 +20,13 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/menoridade">
+          <router-link to="/listadrinks">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-glass-cocktail</v-icon>
               </v-list-item-icon>
               <v-list-item-title
-                >Lista de Drinks menores de idade</v-list-item-title
+                >Lista de Drinks maiores de idade</v-list-item-title
               >
             </v-list-item>
           </router-link>
@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: "AppTopBarMenor",
+  name: "AppTopBarMaior",
   data: () => ({
     drawer: false,
     group: null,
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style scoped>
-.app-top-bar-menor-idade a {
+.app-top-bar-maior-idade a {
   text-decoration: none;
 }
 </style>

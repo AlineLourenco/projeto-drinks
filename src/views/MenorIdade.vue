@@ -1,23 +1,17 @@
 <template>
   <v-app>
-    <AppTopBarMenorIdade/>
-      <v-main>
-        <router-view/>
-      </v-main>
+    <v-main>
+      <router-view />
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import AppTopBarMenorIdade from '../components/shared/AppTopBarMenorIdade.vue'
-
 export default {
-  name: 'AppMenorIdade',
-  components: {
-    AppTopBarMenorIdade,
-  },
+  name: "MenorIdade",
+  components: {},
 };
 </script>
 
 <style scoped>
-
 </style>
