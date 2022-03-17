@@ -6,7 +6,7 @@
       <h2>Drinks Maior Idade</h2>
       <ul>
         <li v-for="item of listaMaiores" :key="item.name">
-          <v-img :src="item.imageURL"></v-img>
+          <v-img :src="item.imageURL" max-height="150" max-width="250"></v-img>
           <span>{{item.name}}</span>
         </li>
       </ul>
