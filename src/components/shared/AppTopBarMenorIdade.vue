@@ -2,7 +2,7 @@
 <div class = "app-top-bar-menor-idade">
         <v-app-bar app color="light-blue accent-3" dark>
             <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-            <v-toolbar-title>Lista de Drinks Para menores de idade🍸</v-toolbar-title>
+            <v-toolbar-title>Lista de Drinks Para menores de idade 🍸</v-toolbar-title>
         </v-app-bar>
 
         <v-navigation-drawer

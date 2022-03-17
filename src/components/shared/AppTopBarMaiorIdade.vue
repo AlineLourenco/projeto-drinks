@@ -1,8 +1,8 @@
 <template>
 <div class = "app-top-bar-maior-idade">
-        <v-app-bar>
+        <v-app-bar app color="light-blue accent-3" dark>
             <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-            <v-toolbar-title>Lista de Drinks para maiores de idade🍸</v-toolbar-title>
+            <v-toolbar-title>Lista de Drinks para Maiores de Idade🍸</v-toolbar-title>
         </v-app-bar>
 
         <v-navigation-drawer
@@ -31,7 +31,7 @@
                         <v-list-item-icon>
                         <v-icon>mdi-glass-cocktail</v-icon>
                         </v-list-item-icon>
-                        <v-list-item-title>Lista de Drinks maiores de idade</v-list-item-title>
+                        <v-list-item-title>Lista de Drinks</v-list-item-title>
                     </v-list-item>
                 </router-link>
 
