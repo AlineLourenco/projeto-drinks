@@ -1,6 +1,6 @@
 <template>
 <div class = "app-top-bar-maior-idade">
-        <v-app-bar app color="light-blue accent-3" dark>
+        <v-app-bar>
             <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
             <v-toolbar-title>Lista de Drinks para maiores de idade🍸</v-toolbar-title>
         </v-app-bar>
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style scoped>
-    .app-top-bar a {
+    .app-top-bar-maior-idade a {
         text-decoration: none;
     }
 </style>
