@@ -1,6 +1,6 @@
 <template>
 <div class = "app-top-bar-menor-idade">
-        <v-app-bar app color="light-blue accent-3" dark>
+        <v-app-bar app color="light-green darken-3" dark>
             <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
             <v-toolbar-title>Lista de Drinks Para menores de idade 🍸</v-toolbar-title>
         </v-app-bar>
@@ -16,7 +16,7 @@
         >
             <v-list-item-group
                 v-model="group"
-                active-class="blue--text text--light-blue accent-3">
+                active-class="green--text text--light-green darken-3">
                 <router-link to="/">
                     <v-list-item>
                         <v-list-item-icon>
