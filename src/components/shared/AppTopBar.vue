@@ -37,11 +37,6 @@
 
             </v-list-item-group>
         </v-list>
-        <v-layout column align-center>
-            <v-flex class="mt-4 mb-3">
-                <Popup/>
-            </v-flex>
-        </v-layout>
         </v-navigation-drawer>
     </div>
 </template>
